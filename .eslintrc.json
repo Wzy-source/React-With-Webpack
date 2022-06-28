@@ -1,0 +1,37 @@
+//因为我们使用prettier进行代码格式相关的设置
+//所以再ESLint中，应禁用与代码格式设置相关的所有ESLint规则，只启用检测潜在错误的规则
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    // eslint 的规则配置文件上做文章，安装特定的 plugin，
+    //把其配置到规则的尾部，实现 prettier 规则对 eslint 规则的覆盖。
+    //prettier/recommended:https://github.com/prettier/eslint-plugin-prettier
+    "plugin:prettier/recommended",
+    //关闭所有不必要或可能与prettier的规则冲突的规则
+    //使得.prettier文件作为代码格式的设置，esLint则更关注于潜在的问题与错误
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ]
+}
