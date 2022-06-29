@@ -1,14 +1,14 @@
 /*
-* action类型
-* */
+ * action类型
+ * */
 export const ADD_TODO = "ADD_TODO";
 export const TOGGLE_TODO = "TOGGLE_TODO";
 export const SET_VISIBILITY_FILTER = "SET_VISIBILITY_FILTER";
 
-
 /*
-* 其他的常量
-* */
+ * 其他的常量
+ *
+ * */
 
 export const VisibilityFilters = {
   SHOW_ALL: "SHOW_ALL",
@@ -17,8 +17,8 @@ export const VisibilityFilters = {
 };
 
 /*
-* action创建函数
-* */
+ * action创建函数
+ * */
 export function addTodo(text: string) {
   return {
     type: ADD_TODO,

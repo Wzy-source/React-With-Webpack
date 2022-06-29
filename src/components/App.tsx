@@ -1,18 +1,21 @@
 import React from "react";
-import Footer from "./Footer";
-import AddTodo from "../containers/AddTodo";
-import VisibleTodoList from "../containers/VisibleTodoList";
 import {Customer} from "./Customer";
 import {UserInfo} from "./UserInfo";
+import {useRoutes} from "react-router-dom";
 
-const App = () => (
-  <div>
-    <Customer />
-    <AddTodo />
-    <VisibleTodoList />
-    <Footer />
-    <UserInfo />
-  </div>
-);
+function App() {
+  return useRoutes([
+    {
+      path: "/",
+      element: <Customer />,
+      children: [
+        {
+          path: "userInfo",
+          element: <UserInfo />,
+        },
+      ],
+    },
+  ]);
+}
 
 export default App;
