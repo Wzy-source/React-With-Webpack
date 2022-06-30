@@ -15,7 +15,7 @@
 13. 引入并尝试使用Immer插件✅
 14. 尝试使用slate框架(TODO)
 15. ESLint引入并学习✅
-16. 引入React-Router(TODO)
+16. 引入React-Router✅
 17. 引入git-ignore文件并推入github✅
 
 Todo:了解更多webpack plugins
