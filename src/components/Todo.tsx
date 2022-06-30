@@ -7,7 +7,7 @@ interface props {
   id: number;
 }
 
-const Todo: React.FC<props> = ({completed, text, onClick}) => {
+const Todo: React.FC<props> = ({ completed, text, onClick }) => {
   return (
     <>
       <span>asjkdaksjd</span>

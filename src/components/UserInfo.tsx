@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import produce from "immer";
 
 interface UserInfoState {
@@ -6,7 +6,7 @@ interface UserInfoState {
   age: number;
 }
 
-export const UserInfo: React.FC = (props) => {
+export const UserInfo: React.FC = () => {
   const [userInfo, setUserInfo] = useState<UserInfoState>({
     name: "wzy",
     age: 22,

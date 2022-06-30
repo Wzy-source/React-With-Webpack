@@ -1,4 +1,4 @@
-import React, {ReactNode} from "react";
+import React, { ReactNode } from "react";
 
 interface props {
   active: boolean;
@@ -6,7 +6,7 @@ interface props {
   onClick: () => void;
 }
 
-const Link: React.FC<props> = ({active, children, onClick}) => {
+const Link: React.FC<props> = ({ active, children, onClick }) => {
   if (active) {
     return <span>{children}</span>;
   }

@@ -4,10 +4,10 @@ import Todo from "./Todo";
 interface props {
   // eslint-disable-next-line no-unused-vars
   onTodoClick: (index: number) => void;
-  todos: {id: number; completed: boolean; text: string}[];
+  todos: { id: number; completed: boolean; text: string }[];
 }
 
-const TodoList: React.FC<props> = ({onTodoClick, todos}) => {
+const TodoList: React.FC<props> = ({ onTodoClick, todos }) => {
   return (
     <>
       <ul>
