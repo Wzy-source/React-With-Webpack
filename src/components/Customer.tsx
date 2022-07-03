@@ -1,7 +1,7 @@
 import React from "react";
-import "../style/Customer.scss";
+import "../style/Customer";
 import Style from "../style/customer.module.scss";
-import {Outlet} from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 export const Customer = () => {
   return (

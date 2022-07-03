@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Todo from "./Todo";
 
 interface props {
@@ -8,6 +8,8 @@ interface props {
 }
 
 const TodoList: React.FC<props> = ({ onTodoClick, todos }) => {
+  // const [todoList, setTodoList] = useState([{ name: "wzy", id: 12 }]);
+
   return (
     <>
       <ul>
